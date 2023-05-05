@@ -14,9 +14,10 @@ include_once(URL);
 <body>
 <form action="search.php" method="post">
     <label for="tel">번호</label>
-    <input type="tel" id="tel" namd="login_tel" placeholder="전화번호를 입력하세요">
+    <input type="tel" id="tel" name="login_tel" placeholder="전화번호를 입력하세요">
     <br>
     <button type="submit">조회</button>
+    <button type="button" onclick="location.href='login_page.php'">취소</button>
 </form>
 </body>
 </html>

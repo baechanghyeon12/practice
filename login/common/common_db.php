@@ -9,7 +9,7 @@
     {
         $host = "localhost";
         $user = "root";
-        $pass = "root506";
+        $pass = "qockdgus12@";
         $charset = "utf8mb4";
         $db_name = "study_group";
         $dns = "mysql:host=".$host.";dbname=".$db_name.";charset=".$charset;
@@ -122,11 +122,14 @@
                 ." FROM login "
                 ." WHERE "
                 ." login_email = :login_email "
+                ." AND "
+                ." login_id = :login_id "
                 ;
     
                 $arr_prepare =
                 array(
                     ":login_email" => $param["login_email"]
+                    ,":login_id" => $param["login_id"]
                 );
     
             $conn = null;
@@ -146,6 +149,6 @@
             {
                 $conn = null;
             }
-            return $result[0];
+            return $result;
     }
 ?>

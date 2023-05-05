@@ -9,10 +9,10 @@
 <body>
     <form action="check_login.php" method="post">
         <label for="id">ID</label>
-        <input type="text" id="id" name="login_id">
+        <input type="text" id="id" name="login_id" autocomplete="off" required>
     <br>
         <label for="password">password</label>
-        <input type="password" id="password" name="login_password">
+        <input type="password" id="password" name="login_password" autocomplete="off" required>
     <br>
     <button type="submit" >LOGIN</button>
     </form>

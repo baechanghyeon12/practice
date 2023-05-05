@@ -8,10 +8,10 @@
 </head>
 <body>
     <form action="check_login.php" method="post">
-        <label for="id">ID</label>
+        <label for="id">I D</label>
         <input type="text" id="id" name="login_id" autocomplete="off" required>
     <br>
-        <label for="password">password</label>
+        <label for="password">PW</label>
         <input type="password" id="password" name="login_password" autocomplete="off" required>
     <br>
     <button type="submit" >LOGIN</button>

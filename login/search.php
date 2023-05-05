@@ -5,6 +5,11 @@ include_once(URL);
 
 $arr_post = $_POST;
 $result = id_search($arr_post);
+if($result === []){
+    echo "<script>alert('가입된 ID가 없습니다.')</script>";
+    echo "<script>location.replace('id_search.php');</script>";
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="ko">

@@ -5,6 +5,11 @@ include_once(URL);
 
 $arr_post = $_POST;
 $result = pw_search($arr_post);
+if($result === []){
+    echo "<script>alert('정보가 일치하지 않습니다.')</script>";
+    echo "<script>location.replace('pw_search.php');</script>";
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="ko">

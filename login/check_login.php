@@ -6,8 +6,6 @@ include_once(URL);
 session_start();
 $id = $_POST['login_id'];
 $pw = $_POST['login_password'];
-var_dump($id);
-var_dump($pw);
 $sql = "SELECT * FROM login WHERE login_id = '$id' AND login_password = '$pw'";
     $conn = null;
     db_conn($conn);

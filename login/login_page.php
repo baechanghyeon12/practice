@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>main_page</title>
+    <style>
+        body { font-family: sans-serif; }
+        input, textarea { font-family: sans-serif; }
+        textarea { width: 600px; height: 300px; }
+        </style>
 </head>
 <body>
     <form action="check_login.php" method="post">
@@ -21,5 +26,16 @@
     <a href="id_search.php">아이디 찾기</a>
     <span> / </span>
     <a href="pw_search.php">비밀번호 찾기</a>
+
+    <?php
+        // if ( $send == 'Yes' ) {
+        //     echo '<p>Message has been sent.</p>';
+        // }
+        ?>
+        <form action="mail.php" method="POST">
+        <p><input type="text" name="subject" placeholder="제목" required /></p>
+        <p><textarea name="content" required></textarea></p>
+        <p><input type="submit" /></p>
+        </form>
 </body>
 </html>

@@ -9,7 +9,7 @@
     {
         $host = "localhost";
         $user = "root";
-        $pass = "qockdgus12@";
+        $pass = "root506";
         $charset = "utf8mb4";
         $db_name = "study_group";
         $dns = "mysql:host=".$host.";dbname=".$db_name.";charset=".$charset;
@@ -38,7 +38,7 @@
     //파라미터  : array(속성)
     //---------------------------------
 
-    function sign_up($param_arr)
+    function sign_up(&$param_arr)
     {
     $sql = 
     " INSERT INTO login( "

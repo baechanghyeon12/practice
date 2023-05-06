@@ -5,7 +5,15 @@ include_once(URL);
 $rqs_method = $_SERVER["REQUEST_METHOD"];
 if($rqs_method === "POST"){
 $arr_post = $_POST;
-sign_up($arr_post);
+$hpw = password_hash($arr_post["login_password"],PASSWORD_DEFAULT);
+$arr_prepare = 
+        array(
+            "login_id" => $arr_post["login_id"]
+            ,"login_password" => $hpw
+            ,"login_email" => $arr_post["login_email"]
+            ,"login_tel" => $arr_post["login_tel"]
+        );
+sign_up($arr_prepare);
 header("Location: login_page.php");
 exit;
 }

@@ -1,0 +1,30 @@
+/* 초기화 */
+body{
+  margin: unset;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style-type: none;
+  margin: unset;
+  padding: unset;
+}
+
+:root{
+  --shadow-1: inset 0 0 30px red;
+}
+
+/* layout */
+.nav{
+  display: flex;
+  justify-content: space-around;
+  padding:20px 0;
+  background-color: rgb(126, 126, 126);
+}
+.nav-link{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}

@@ -15,6 +15,15 @@
     숫자가 증가합니다. {{ $i }}<br>
   @endfor
 
-  @include('inc')
+  @includeif('sub.inc')
+
+  @php
+    $a = 10;
+    $a++;
+
+    echo '<p>a 의 값은 ? '.$a.'입니다.</p>'
+  @endphp
+
+  {{-- 블레이드 템플릿 주석 방법--}}
 </body>
 </html>
